@@ -25,6 +25,10 @@ public class Main {
         //step 2 create int array
         int[] myIntegers = getIntegers(5);
 
+        //step 9
+        int[] sorted = sortIntegers(myIntegers);
+        printArray(sorted);    //then run
+
     }
 
     //step 3 method
@@ -77,5 +81,20 @@ public class Main {
     }
 
 }
+
+//results
+/*note; enter any ints
+Enter 5 integer values:
+2
+4
+5
+7
+8
+Element 0 contents 8
+Element 1 contents 7
+Element 2 contents 5
+Element 3 contents 4
+Element 4 contents 2
+ */
 
 
