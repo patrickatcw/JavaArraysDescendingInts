@@ -22,8 +22,21 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        //step 2 create int array
+        int[] myIntegers = getIntegers(5);
 
+    }
 
+    //step 3 method
+    public static int[] getIntegers(int capacity) {
+        int[] array = new int[capacity];
+        System.out.println("Enter " + capacity + " integer values: \r");
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt();
+        }
+
+        //step 4 return
+        return array;
     }
 
 }
