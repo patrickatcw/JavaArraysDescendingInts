@@ -14,9 +14,15 @@ and sortIntegers should sort the array and return a new array containing the sor
 array and sort them and return the new sorted array
  */
 
+//step 1
+import java.util.Scanner;
+
 public class Main {
+    //step 1
+    private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+
 
     }
 
