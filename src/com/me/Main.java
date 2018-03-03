@@ -39,4 +39,11 @@ public class Main {
         return array;
     }
 
+    //step 5 next create print array
+    public static void printArray(int[] array) {
+        for(int i = 0; i < array.length; i++ ) {
+            System.out.println("Element " + i + " contents " + array[i]);
+        }
+
+
 }
