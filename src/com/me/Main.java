@@ -41,9 +41,41 @@ public class Main {
 
     //step 5 next create print array
     public static void printArray(int[] array) {
-        for(int i = 0; i < array.length; i++ ) {
+        for (int i = 0; i < array.length; i++) {
             System.out.println("Element " + i + " contents " + array[i]);
         }
 
+    }
+
+    //step 6 method for sorting
+    public static int[] sortIntegers(int[] array) {
+        int[] sortedArray = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            sortedArray[i] = array[i];
+        }
+
+        //step 7 while loop
+        boolean flag = true;
+        int temp;
+        while (flag) {
+            flag = false;
+            for (int i = 0; i < sortedArray.length - 1; i++) {
+                if (sortedArray[i] < sortedArray[i + 1]) {
+                    temp = sortedArray[i];
+                    sortedArray[i] = sortedArray[i + 1];
+                    sortedArray[i + 1] = temp;
+                    flag = true;
+                }
+            }
+
+        }
+
+        //step 8 return
+        return sortedArray;
+
+
+    }
 
 }
+
+
