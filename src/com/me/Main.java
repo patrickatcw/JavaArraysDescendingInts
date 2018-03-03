@@ -15,6 +15,7 @@ array and sort them and return the new sorted array
  */
 
 //step 1
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -53,10 +54,13 @@ public class Main {
 
     //step 6 method for sorting
     public static int[] sortIntegers(int[] array) {
-        int[] sortedArray = new int[array.length];
+        /*int[] sortedArray = new int[array.length];
         for (int i = 0; i < array.length; i++) {
             sortedArray[i] = array[i];
-        }
+        }*/
+
+        //step 10 alternative to above, built in to java language, commented above out, then..
+        int[] sortedArray = Arrays.copyOf(array, array.length);
 
         //step 7 while loop
         boolean flag = true;
